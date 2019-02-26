@@ -49,10 +49,11 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a single city based on the developers
-     * @param cityId
+     * cityId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param cityId - ID of the city to be queried
      * @param callback - Result callback
      */
     @Override
@@ -79,10 +80,11 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a list of all malls based on the developers
-     * @param cityId
+     * cityId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param cityId - ID of the city to be queried
      * @param callback - Result callback
      */
     @Override
@@ -116,11 +118,12 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a a single mall based on the developers
-     * @param cityId and
-     * @param mallId
+     * cityId and mallId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param mallId - ID of the mall to be queried
+     * @param cityId - ID of the city to be queried
      * @param callback - Result callback
      */
     @Override
@@ -152,10 +155,11 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a list of shops in a mall based on the developers
-     * @param mallId
+     * mallId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param mallId - ID of the mall to be queried
      * @param callback - Result callback
      */
     @Override
@@ -191,10 +195,11 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a list of shops in a city based on the developers
-     * @param cityId
+     *  cityId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param cityId - ID of the mall to be queried
      * @param callback - Result callback
      */
     @Override
@@ -230,11 +235,12 @@ public class Solid implements SolidSDK {
 
     /**
      * Asynchronously request a single shop based on the developers
-     * @param mallId and
-     * @param shopId
+     * mallId and shopId
      * and notify the {@code callback} of its response with either
      * {@code onSuccess} or {@code onFailure}
      *
+     * @param mallId - ID of the mall to be queried
+     * @param shopId - ID of the shop to be queried
      * @param callback - Result callback
      */
     @Override
