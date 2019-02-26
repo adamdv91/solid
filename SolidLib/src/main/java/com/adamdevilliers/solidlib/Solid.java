@@ -23,9 +23,12 @@ public class Solid implements SolidSDK {
         this.solidClient = solidClient;
     }
 
-    /*
-      Solid sdk getCities is used to collect all the cities response data
-    */
+    /**
+     * Asynchronously request a list of all cities and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
+     */
     @Override
     public void getCities(final SolidCallback<List<City>> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
@@ -44,8 +47,13 @@ public class Solid implements SolidSDK {
         });
     }
 
-    /*
-      Solid sdk getCity is used to collect just one city based on the cityId provided
+    /**
+     * Asynchronously request a single city based on the developers
+     * @param cityId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getCity(final int cityId, final SolidCallback<City> callback) {
@@ -69,8 +77,13 @@ public class Solid implements SolidSDK {
         });
     }
 
-     /*
-        Solid sdk getMalls is used to collect all the malls based on the cityId that the user has provided
+    /**
+     * Asynchronously request a list of all malls based on the developers
+     * @param cityId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getMalls(final int cityId, final SolidCallback<List<Mall>> callback) {
@@ -101,8 +114,14 @@ public class Solid implements SolidSDK {
         });
     }
 
-    /*
-        Solid sdk getMall is used to collect one mall based on the city that the user has provided
+    /**
+     * Asynchronously request a a single mall based on the developers
+     * @param cityId and
+     * @param mallId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getMall(final int cityId, final int mallId, final SolidCallback<Mall> callback) {
@@ -131,8 +150,13 @@ public class Solid implements SolidSDK {
         });
     }
 
-     /*
-        Solid sdk getShops is used to collect all the shops based on the mallId that the user has provided
+    /**
+     * Asynchronously request a list of shops in a mall based on the developers
+     * @param mallId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getShops(final int mallId, final SolidCallback<List<Shop>> callback) {
@@ -165,8 +189,13 @@ public class Solid implements SolidSDK {
         });
     }
 
-    /*
-        Solid sdk getShops is used to collect all the shops based on the cityId that the user has provided
+    /**
+     * Asynchronously request a list of shops in a city based on the developers
+     * @param cityId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getShopsForCity(final int cityId, final SolidCallback<List<Shop>> callback) {
@@ -199,8 +228,14 @@ public class Solid implements SolidSDK {
         });
     }
 
-    /*
-        Solid sdk getShop is used to collect one shop based on the cityId and mallId that the user has provided
+    /**
+     * Asynchronously request a single shop based on the developers
+     * @param mallId and
+     * @param shopId
+     * and notify the {@code callback} of its response with either
+     * {@code onSuccess} or {@code onFailure}
+     *
+     * @param callback - Result callback
      */
     @Override
     public void getShop(final int mallId, final int shopId, final SolidCallback<Shop> callback) {
