@@ -28,7 +28,7 @@ public class Solid implements SolidSDK {
     */
     @Override
     public void getCities(final SolidCallback<List<City>> callback) {
-        solidClient.getCities(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -49,7 +49,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getCity(final int cityId, final SolidCallback<City> callback) {
-        solidClient.getCities(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -74,7 +74,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getMalls(final int cityId, final SolidCallback<List<Mall>> callback) {
-        solidClient.getMalls(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
                 List<Mall> malls = new ArrayList<>();
@@ -106,7 +106,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getMall(final int cityId, final int mallId, final SolidCallback<Mall> callback) {
-        solidClient.getMalls(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
 
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
@@ -136,7 +136,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getShops(final int mallId, final SolidCallback<List<Shop>> callback) {
-        solidClient.getShops(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
                 List<Shop> shops = new ArrayList<>();
@@ -170,7 +170,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getShopsForCity(final int cityId, final SolidCallback<List<Shop>> callback) {
-        solidClient.getShops(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
                 List<Shop> shops = new ArrayList<>();
@@ -204,7 +204,7 @@ public class Solid implements SolidSDK {
      */
     @Override
     public void getShop(final int mallId, final int shopId, final SolidCallback<Shop> callback) {
-        solidClient.getShops(new Callback<MockyResponse>() {
+        solidClient.getSolidResponse(new Callback<MockyResponse>() {
 
             @Override
             public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {

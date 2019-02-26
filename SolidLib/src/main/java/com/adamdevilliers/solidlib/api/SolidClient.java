@@ -44,20 +44,7 @@ public class SolidClient {
         return service == null ? service = createService() : service;
     }
 
-
-    public void getListOfMalls(Callback<MockyResponse> cb) {
-        getService().getCities().enqueue(cb);
-    }
-
-    public void getCities(Callback<MockyResponse> cb){
-        getService().getCities().enqueue(cb);
-    }
-
-    public void getMalls(Callback<MockyResponse> cb){
-        getService().getCities().enqueue(cb);
-    }
-
-    public void getShops(Callback<MockyResponse> cb){
+    public void getSolidResponse(Callback<MockyResponse> cb){
         getService().getCities().enqueue(cb);
     }
 }
