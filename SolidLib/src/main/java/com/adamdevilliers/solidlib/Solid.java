@@ -2,15 +2,16 @@ package com.adamdevilliers.solidlib;
 
 import com.adamdevilliers.solidlib.api.SolidClient;
 import com.adamdevilliers.solidlib.api.response.MockyResponse;
+import com.adamdevilliers.solidlib.exceptions.ItemNotFoundException;
+import com.adamdevilliers.solidlib.exceptions.NetworkCallException;
 import com.adamdevilliers.solidlib.models.City;
 import com.adamdevilliers.solidlib.models.Mall;
 import com.adamdevilliers.solidlib.models.Shop;
-import com.adamdevilliers.solidlib.exceptions.ItemNotFoundException;
-import com.adamdevilliers.solidlib.exceptions.NetworkCallException;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.NonNull;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -33,14 +34,14 @@ public class Solid implements SolidSDK {
     public void getCities(final SolidCallback<List<City>> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call, @NonNull Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     callback.onSuccess(response.body().getCities());
                 }
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call,@NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -60,7 +61,7 @@ public class Solid implements SolidSDK {
     public void getCity(final int cityId, final SolidCallback<City> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call,@NonNull Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
                         if (response.body().getCities().get(i).getId() == cityId) {
@@ -71,7 +72,7 @@ public class Solid implements SolidSDK {
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call,@NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -91,7 +92,7 @@ public class Solid implements SolidSDK {
     public void getMalls(final int cityId, final SolidCallback<List<Mall>> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call,@NonNull Response<MockyResponse> response) {
                 List<Mall> malls = new ArrayList<>();
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
@@ -109,7 +110,7 @@ public class Solid implements SolidSDK {
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call,@NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -131,7 +132,7 @@ public class Solid implements SolidSDK {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
 
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call,@NonNull Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
                         if (response.body().getCities().get(i).getId() == cityId) {
@@ -146,7 +147,7 @@ public class Solid implements SolidSDK {
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call,@NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -166,7 +167,7 @@ public class Solid implements SolidSDK {
     public void getShops(final int mallId, final SolidCallback<List<Shop>> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call, @NonNull Response<MockyResponse> response) {
                 List<Shop> shops = new ArrayList<>();
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
@@ -186,7 +187,7 @@ public class Solid implements SolidSDK {
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call, @NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -206,7 +207,7 @@ public class Solid implements SolidSDK {
     public void getShopsForCity(final int cityId, final SolidCallback<List<Shop>> callback) {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call,@NonNull Response<MockyResponse> response) {
                 List<Shop> shops = new ArrayList<>();
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
@@ -226,7 +227,7 @@ public class Solid implements SolidSDK {
             }
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call,@NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }
@@ -248,7 +249,7 @@ public class Solid implements SolidSDK {
         solidClient.getSolidResponse(new Callback<MockyResponse>() {
 
             @Override
-            public void onResponse(Call<MockyResponse> call, Response<MockyResponse> response) {
+            public void onResponse(@NonNull Call<MockyResponse> call,@NonNull Response<MockyResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     for (int i = 0; i < response.body().getCities().size(); i++) {
                         for (int j = 0; j < response.body().getCities().get(i).getMalls().size(); j++) {
@@ -267,7 +268,7 @@ public class Solid implements SolidSDK {
 
 
             @Override
-            public void onFailure(Call<MockyResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<MockyResponse> call, @NonNull Throwable t) {
                 NetworkCallException networkCallException = new NetworkCallException("An error has occurred", t);
                 callback.onFailure(networkCallException);
             }

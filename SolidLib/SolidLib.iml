@@ -32,6 +32,7 @@
     <orderEntry type="library" exported="" name="Gradle: retrofit-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logging-interceptor-3.11.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: okhttp-3.11.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: annotation-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: moshi-1.4.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: gson-2.8.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: okio-1.14.0" level="project" />
