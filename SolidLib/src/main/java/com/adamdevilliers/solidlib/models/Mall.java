@@ -1,16 +1,16 @@
-package com.adamdevilliers.solidlib.api.response.models;
+package com.adamdevilliers.solidlib.models;
 
 import java.util.List;
 
 /*
-    Solid sdk Cities model is used to grab the cities response from the api
+    Solid sdk malls model is used to grab the malls response from the api
  */
 
-public class Cities {
 
+public class Mall {
     private int id;
     private String name;
-    private List<Malls> malls;
+    private List<Shop> shops;
 
     public int getId() {
         return id;
@@ -28,11 +28,11 @@ public class Cities {
         this.name = name;
     }
 
-    public List<Malls> getMalls() {
-        return malls;
+    public List<Shop> getShops() {
+        return shops;
     }
 
-    public void setMalls(List<Malls> malls) {
-        this.malls = malls;
+    public void setShops(List<Shop> shops) {
+        this.shops = shops;
     }
 }

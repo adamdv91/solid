@@ -1,4 +1,4 @@
-package com.adamdevilliers.solidlib.errorhandling;
+package com.adamdevilliers.solidlib.exceptions;
 
 /*
     Solid sdk SolidException is the parent class from exception handling done throughout the sdk

@@ -1,27 +1,27 @@
 package com.adamdevilliers.solidlib;
 
 import com.adamdevilliers.solidlib.api.SolidClient;
-import com.adamdevilliers.solidlib.api.response.models.Cities;
-import com.adamdevilliers.solidlib.api.response.models.Malls;
-import com.adamdevilliers.solidlib.api.response.models.Shops;
+import com.adamdevilliers.solidlib.models.City;
+import com.adamdevilliers.solidlib.models.Mall;
+import com.adamdevilliers.solidlib.models.Shop;
 
 import java.util.List;
 
 public interface SolidSDK {
 
-    void getCities(final SolidCallback<List<Cities>> callback);
+    void getCities(final SolidCallback<List<City>> callback);
 
-    void getCity(final int cityId, final SolidCallback<Cities> callback);
+    void getCity(final int cityId, final SolidCallback<City> callback);
 
-    void getMalls(final int cityId, final SolidCallback<List<Malls>> callback);
+    void getMalls(final int cityId, final SolidCallback<List<Mall>> callback);
 
-    void getMall(final int cityId, final int mallId, final SolidCallback<Malls> callback);
+    void getMall(final int cityId, final int mallId, final SolidCallback<Mall> callback);
 
-    void getShops(final int mallId, final SolidCallback<List<Shops>> callback);
+    void getShops(final int mallId, final SolidCallback<List<Shop>> callback);
 
-    void getShopsForCity(final int cityId, final SolidCallback<List<Shops>> callback);
+    void getShopsForCity(final int cityId, final SolidCallback<List<Shop>> callback);
 
-    void getShop(final int mallId, final int shopId, final SolidCallback<Shops> callback);
+    void getShop(final int mallId, final int shopId, final SolidCallback<Shop> callback);
 
     /*
         Solid sdk builder is used for instantiation of the solidSdk interface

@@ -1,6 +1,6 @@
 package com.adamdevilliers.solidlib.api.response;
 
-import com.adamdevilliers.solidlib.api.response.models.Cities;
+import com.adamdevilliers.solidlib.models.City;
 
 import java.util.List;
 
@@ -8,15 +8,15 @@ import java.util.List;
     Solid sdk GetListOfMalls model is used to grab and direct all responses from the api
  */
 
-public class GetListOfMallsResponse {
+public class MockyResponse {
 
-    private List<Cities> cities;
+    private List<City> cities;
 
-    public List<Cities> getCities() {
+    public List<City> getCities() {
         return cities;
     }
 
-    public void setCities(List<Cities> cities) {
+    public void setCities(List<City> cities) {
         this.cities = cities;
     }
 }

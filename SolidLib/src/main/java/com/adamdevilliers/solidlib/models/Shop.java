@@ -1,9 +1,9 @@
-package com.adamdevilliers.solidlib.api.response.models;
+package com.adamdevilliers.solidlib.models;
 
 /*
-    Solid sdk Shops model is used to grab the shops response from the api
+    Solid sdk Shop model is used to grab the shops response from the api
  */
-public class Shops {
+public class Shop {
 
     private int id;
     private String name;

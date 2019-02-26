@@ -1,6 +1,6 @@
 package com.adamdevilliers.solidlib.api;
 
-import com.adamdevilliers.solidlib.api.response.GetListOfMallsResponse;
+import com.adamdevilliers.solidlib.api.response.MockyResponse;
 
 import java.util.concurrent.TimeUnit;
 
@@ -45,19 +45,19 @@ public class SolidClient {
     }
 
 
-    public void getListOfMalls(Callback<GetListOfMallsResponse> cb) {
+    public void getListOfMalls(Callback<MockyResponse> cb) {
         getService().getListOfMalls().enqueue(cb);
     }
 
-    public void getCities(Callback<GetListOfMallsResponse> cb){
+    public void getCities(Callback<MockyResponse> cb){
         getService().getCities().enqueue(cb);
     }
 
-    public void getMalls(Callback<GetListOfMallsResponse> cb){
+    public void getMalls(Callback<MockyResponse> cb){
         getService().getMalls().enqueue(cb);
     }
 
-    public void getShops(Callback<GetListOfMallsResponse> cb){
+    public void getShops(Callback<MockyResponse> cb){
         getService().getShops().enqueue(cb);
     }
 }

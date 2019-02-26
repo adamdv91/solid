@@ -1,4 +1,4 @@
-package com.adamdevilliers.solidlib.errorhandling;
+package com.adamdevilliers.solidlib.exceptions;
 
 /*
     Solid sdk ItemNotFoundException is used to display a message with human error created by

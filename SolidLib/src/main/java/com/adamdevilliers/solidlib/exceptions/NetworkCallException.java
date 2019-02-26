@@ -1,4 +1,4 @@
-package com.adamdevilliers.solidlib.errorhandling;
+package com.adamdevilliers.solidlib.exceptions;
 /*
     Solid sdk NetworkCallException is used to display a message with a network issue happens
     while in communication with the Solid sdk.
