@@ -46,7 +46,7 @@ public class SolidClient {
 
 
     public void getListOfMalls(Callback<MockyResponse> cb) {
-        getService().getListOfMalls().enqueue(cb);
+        getService().getCities().enqueue(cb);
     }
 
     public void getCities(Callback<MockyResponse> cb){
@@ -54,10 +54,10 @@ public class SolidClient {
     }
 
     public void getMalls(Callback<MockyResponse> cb){
-        getService().getMalls().enqueue(cb);
+        getService().getCities().enqueue(cb);
     }
 
     public void getShops(Callback<MockyResponse> cb){
-        getService().getShops().enqueue(cb);
+        getService().getCities().enqueue(cb);
     }
 }

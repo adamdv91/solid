@@ -8,14 +8,5 @@ import retrofit2.http.GET;
 interface SolidService {
 
     @GET("/v2/5b7e8bc03000005c0084c210/")
-    Call<MockyResponse> getListOfMalls();
-
-    @GET("/v2/5b7e8bc03000005c0084c210/")
     Call<MockyResponse> getCities();
-
-    @GET("/v2/5b7e8bc03000005c0084c210/")
-    Call<MockyResponse> getMalls();
-
-    @GET("/v2/5b7e8bc03000005c0084c210/")
-    Call<MockyResponse> getShops();
 }
