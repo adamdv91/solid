@@ -6,6 +6,7 @@ INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:2:1-2
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8846e520bc60f3a6c462de282e495814/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wesley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/8bf4aafcc0adb9f39f7f017e0164c7a0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/45b6e64d735a9ed7bf18a421d0730529/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/438a04891424527f85eacbac747bee05/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c5c219fd5a87555a11601ca92870122b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/70eb02c603b5160f7dca6047a184ba08/AndroidManifest.xml:17:1-22:12
@@ -27,10 +28,10 @@ MERGED from [com.android.support:documentfile:28.0.0] /Users/wesley/.gradle/cach
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/c4cb1cdf3b9af68ed8886bf1fc34bb84/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/12759e8e923d712c9e5efaad397a9a91/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8be950ee9af91038e0ba9c1b087982c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/94c18eba29c37a98b13c21ef6ccaa968/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c011f5e904ea1028505ea8d7f6e8d7d1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d3a37e22358fd0bd980e5bb6e28634ab/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:2:1-23:12
@@ -74,10 +75,10 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/wesley/.grad
 		ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:13:9-40
-activity#com.adamdevilliers.solid.MainActivity
+activity#com.adamdevilliers.solid.activity.MainActivity
 ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:14:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
@@ -96,6 +97,8 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wesley/.gradle/cach
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8846e520bc60f3a6c462de282e495814/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wesley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/8bf4aafcc0adb9f39f7f017e0164c7a0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wesley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/8bf4aafcc0adb9f39f7f017e0164c7a0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/45b6e64d735a9ed7bf18a421d0730529/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/45b6e64d735a9ed7bf18a421d0730529/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/438a04891424527f85eacbac747bee05/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/438a04891424527f85eacbac747bee05/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c5c219fd5a87555a11601ca92870122b/AndroidManifest.xml:20:5-44
@@ -138,14 +141,14 @@ MERGED from [com.android.support:print:28.0.0] /Users/wesley/.gradle/caches/tran
 MERGED from [com.android.support:print:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/12759e8e923d712c9e5efaad397a9a91/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8be950ee9af91038e0ba9c1b087982c6/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8be950ee9af91038e0ba9c1b087982c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/94c18eba29c37a98b13c21ef6ccaa968/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/94c18eba29c37a98b13c21ef6ccaa968/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c011f5e904ea1028505ea8d7f6e8d7d1/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c011f5e904ea1028505ea8d7f6e8d7d1/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d3a37e22358fd0bd980e5bb6e28634ab/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/wesley/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d3a37e22358fd0bd980e5bb6e28634ab/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/wesley/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b075b7415bd82526958aefdcea29677a/AndroidManifest.xml:20:5-44
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml
 INJECTED from /Users/wesley/Desktop/solid/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

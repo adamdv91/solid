@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Solid</string>
+    <string name="list_of_all_the_cities_available"><i>List of all the cities available</i></string>
+    <string name="list_of_all_the_current_malls">List of all the current malls</string>
+    <string name="list_of_shops_in_mall">List of shops in mall</string>
 </resources>
